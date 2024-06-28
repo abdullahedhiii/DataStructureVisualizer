@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structure Visualizer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:  rgb(93, 63, 63);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Structure Visualizer</h1>
+        <select id="visualizerSelect">
+            <option value="">Select Visualizer</option>
+            <option value="stack.html">Stack Visualizer</option>
+            <option value="queue.html">Queue Visualizer</option>
+            <option value="linkedlist.html">Singly linked list Visualizer</option>
+
+        </select>
+        <button class="button" id="goButton">Go</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('#goButton').onclick = function() {
+                let selectedValue = document.querySelector('#visualizerSelect').value;
+                if (selectedValue) {
+                    window.location.href = selectedValue;
+                } else {
+                    alert('Please select a visualizer.');
+                }
+            };
+        });
+    </script>
+</body>
+</html>

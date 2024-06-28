@@ -1,0 +1,48 @@
+.stk{
+    display: flex;
+    margin-left:25%;
+    border:1px solid black;
+    height:30px;
+    width:60px;
+    text-align: center;
+    padding-left:44px;
+    padding-top:10px;
+    border-radius:10px;
+    border-collapse: collapse;
+    background-color: rgb(93, 80, 80);
+    color:white;
+}
+
+#mainContainer{
+    width: 80%; 
+    margin: 0 auto; 
+    text-align: center; 
+    padding: 20px; 
+    border: 1px solid rgb(93, 63, 63);; 
+    box-shadow: 0 0 10px rgba(219, 70, 70, 0.1); 
+    outline: auto;
+    background-color: azure;
+}
+
+
+h1{
+    text-align: center;
+    color:bisque
+}
+
+body{
+    background-color: rgb(93, 63, 63);
+}
+
+button{
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: coral;
+}
+
+a{
+    color:bisque;
+    text-decoration-line: underline;
+}
